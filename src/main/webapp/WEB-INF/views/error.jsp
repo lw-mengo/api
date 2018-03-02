@@ -2,15 +2,15 @@
   Created by IntelliJ IDEA.
   User: Administrator
   Date: 2018/3/2 0002
-  Time: 16:36:28
+  Time: 22:22:39
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>欢迎</title>
+    <title>Title</title>
 </head>
 <body>
-    <h3>欢迎${sessionScope.user.username}访问</h3>
- </body>
+ <p>${message}</p>
+</body>
 </html>

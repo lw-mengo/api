@@ -7,6 +7,8 @@
   <version>1.0-SNAPSHOT</version>
   <name>api Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -107,6 +109,13 @@
       <artifactId>slf4j-log4j12</artifactId>
       <version>1.7.25</version>
       <scope>test</scope>
+      <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.0</version>
+      <scope>provided</scope>
     </dependency>
       <dependency>
           <groupId>junit</groupId>
