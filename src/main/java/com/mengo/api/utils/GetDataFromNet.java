@@ -27,8 +27,8 @@ public class GetDataFromNet {
                     info.setTitle(title);
                     info.setUrl(url);
                     dataBeans.add(info);
-                    System.out.println(title);
-                    System.out.println(url);
+//                    System.out.println(title);
+//                    System.out.println(url);
             }
             dataBean.setStatus("success");
             dataBean.setInfoList(dataBeans);
