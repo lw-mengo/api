@@ -1,11 +1,15 @@
 package test;
 
+import com.google.gson.Gson;
+import com.mengo.api.utils.GetDataFromNet;
+import com.mengo.bean.DataBean;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.sql.DataSource;
 import java.sql.SQLException;
+import java.util.List;
 
 public class Tests {
     private ApplicationContext context = null;
@@ -23,6 +27,14 @@ public class Tests {
             e.printStackTrace();
         }
     }
+    @Test
+    public void testGetData(){
+        Gson gson  = new Gson();
 
+        GetDataFromNet getDataFromNet = new GetDataFromNet();
+        DataBean dataBean = getDataFromNet.getData();
+        String temp = gson.toJson(dataBean,DataBean.class);
+        System.out.println(temp);
+    }
 
 }
