@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -28,7 +28,7 @@
         <tbody>
         <c:forEach var="item" items="${list_my.infoList}">
             <tr>
-                <td>${item.title}</td>
+                <td><a href="/detail?s=${item.url}">${item.title}</a></td>
                 <td>${item.url}</td>
             </tr>
         </c:forEach>
@@ -36,13 +36,12 @@
     </table>
     <div class="container center">
         <ul class="pagination">
-            <li class="disabled"><a href=""><i class="material-icons">chevron_left</i></a></li>
-            <li class="active"><a href="">1</a></li>
-            <li class="waves-effect"><a href="">2</a></li>
-            <li class="waves-effect"><a href="">3</a></li>
-            <li class="waves-effect"><a href="">4</a></li>
-            <li class="waves-effect"><a href="">5</a></li>
-            <li class="waves-effect"><a href=""><i class="material-icons">chevron_right</i></a></li>
+            <li class="disabled"><a href="/list?pageNo=${x-1}"><i class="material-icons">chevron_left</i></a></li>
+            <li class="active"><a href="/list?pageNo=1">1</a></li>
+            <c:forEach var="x" begin="2" end="9" step="1">
+                <li class="waves-effect"><a href="/list?pageNo=${x}">${x}</a></li>
+            </c:forEach>
+            <li class="waves-effect"><a href="/list?pageNo=${x+1}"><i class="material-icons">chevron_right</i></a></li>
         </ul>
     </div>
 </div>

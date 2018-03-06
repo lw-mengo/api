@@ -5,6 +5,7 @@ import com.mengo.api.entity.User;
 import com.mengo.api.service.UserService;
 import com.mengo.api.utils.GetDataFromNet;
 import com.mengo.bean.DataBean;
+import com.mengo.bean.VideoBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -36,12 +37,17 @@ public class UserHandler {
     }
 
     @RequestMapping(value = "/list",method = RequestMethod.GET)
-    public String  listAll(ModelMap modelMap){
-        Gson gson  = new Gson();
-
+    public String  listAll(ModelMap modelMap,@RequestParam(value = "pageNo",defaultValue = "1")int pageNo){
         GetDataFromNet getDataFromNet = new GetDataFromNet();
-        DataBean dataBean = getDataFromNet.getData();
+        DataBean dataBean = getDataFromNet.getData(pageNo);
         modelMap.addAttribute("list_my",dataBean);
         return "list";
+    }
+    @RequestMapping(value = "/detail",method = RequestMethod.GET)
+    public String listDetail(@RequestParam(value = "s")String s,ModelMap modelMap){
+        GetDataFromNet getDataFromNet = new GetDataFromNet();
+        VideoBean videoBean = getDataFromNet.getInfo(s);
+        modelMap.addAttribute("detail_info",videoBean);
+        return "detail";
     }
 }

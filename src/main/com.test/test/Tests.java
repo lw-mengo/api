@@ -3,6 +3,7 @@ package test;
 import com.google.gson.Gson;
 import com.mengo.api.utils.GetDataFromNet;
 import com.mengo.bean.DataBean;
+import com.mengo.bean.VideoBean;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -32,9 +33,12 @@ public class Tests {
         Gson gson  = new Gson();
 
         GetDataFromNet getDataFromNet = new GetDataFromNet();
-        DataBean dataBean = getDataFromNet.getData();
-        String temp = gson.toJson(dataBean,DataBean.class);
-        System.out.println(temp);
+       VideoBean videoBean = getDataFromNet.getInfo("/?m=vod-detail-id-6454.html");
+        String temp1 = gson.toJson(videoBean,VideoBean.class);
+        System.out.println(temp1);
+//        DataBean dataBean = getDataFromNet.getData();
+//        String temp = gson.toJson(dataBean,DataBean.class);
+//        System.out.println(temp);
     }
 
 }
