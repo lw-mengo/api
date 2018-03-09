@@ -57,6 +57,10 @@
         <servlet-name>DispatcherServlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+    <!--session过期时间-->
+    <session-config>
+        <session-timeout>20</session-timeout>
+    </session-config>
 
     <!--4.配置可以把post请求转为delete或update请求-->
     <filter>

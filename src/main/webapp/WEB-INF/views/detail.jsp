@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -23,7 +24,6 @@
             <tr>
                 <th>剧集</th>
                 <th>视频链接</th>
-                <th rowspan="2" class="center">操作</th>
             </tr>
             </thead>
             <tbody>
@@ -31,12 +31,39 @@
                 <tr>
                     <td>${item.episode}</td>
                     <td>${item.videoLink}</td>
-                    <td><a class="waves-effect waves-light btn">添加</a></td>
-                    <td><a class="waves-effect waves-light btn">刪除</a></td>
                 </tr>
                 </c:forEach>
             </tbody>
         </table>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <form:form class="col s12" action="/save_bangumi" method="post" modelAttribute="bangumi">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <form:input placeholder="番剧名字" id="first_name" path="name" type="text" class="validate"/>
+                        <label for="first_name">番名：</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <form:input placeholder="番剧aid" id="aid" path="aid" type="text" class="validate" />
+                        <label for="aid">aid:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <form:textarea id="video_url" path="url" class="materialize-textarea"/>
+                        <label for="video_url">视频链接的json：</label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light right" type="submit">提交
+                    <i class="material-icons right">send</i>
+                </button>
+            </form:form>
+        </div>
+    </div>
+    <div class="container">
+        <p>${json_url}</p>
     </div>
 
 </body>

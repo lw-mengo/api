@@ -7,6 +7,11 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%
+    if (session.getAttribute("user")==null){
+        response.sendRedirect("/index.jsp");
+    }
+%>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -16,6 +21,7 @@
     <script src="/js/materialize.min.js"></script>
     <title>展示数据</title>
 </head>
+
 <body>
 <div class="container">
     <table class="highlight">
