@@ -38,11 +38,27 @@
                 <label for="pwd">密码:</label>
             </div>
         </div>
-        <button class="btn waves-effect waves-light " style="margin-left: 760px" type="submit">登录
+        <button class="btn waves-effect waves-light" style="margin-left: 760px" type="submit">登录
             <i class="material-icons right">send</i>
         </button>
     </form>
 </div>
 
 </body>
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            var name = $("#name").val();
+            var password = $("#pwd").val();
+            if (name==null||name==""){
+                Materialize.toast('用户名不能为空！',1200);
+            }else if(password==null||password==""){
+                Materialize.toast('密码不能为空!',1200);
+            }else{
+                return true;
+            }
+            return false;
+        });
+    });
+</script>
 </html>

@@ -7,29 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c63de7f4-cae4-428b-b1de-4b71c49f6d77" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../api/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../api/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../api/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../api/src/main/java/com/mengo/api/controller/BangumiHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../api/src/main/java/com/mengo/api/entity/Bangumi.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../api/src/main/java/com/mengo/api/repository/BangumiRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../api/src/main/java/com/mengo/api/service/BangumiService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/bangumi/list.jsp" />
-      <change beforePath="$PROJECT_DIR$/../api/.idea/artifacts/api_war_exploded.xml" afterPath="$PROJECT_DIR$/../api/.idea/artifacts/api_war_exploded.xml" />
       <change beforePath="$PROJECT_DIR$/../api/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../api/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../api/api.iml" afterPath="$PROJECT_DIR$/../api/api.iml" />
-      <change beforePath="$PROJECT_DIR$/../api/pom.xml" afterPath="$PROJECT_DIR$/../api/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/../api/src/main/java/com/mengo/api/controller/BangumiHandler.java" afterPath="$PROJECT_DIR$/../api/src/main/java/com/mengo/api/controller/BangumiHandler.java" />
       <change beforePath="$PROJECT_DIR$/../api/src/main/java/com/mengo/api/controller/UserHandler.java" afterPath="$PROJECT_DIR$/../api/src/main/java/com/mengo/api/controller/UserHandler.java" />
-      <change beforePath="$PROJECT_DIR$/../api/src/main/java/com/mengo/api/repository/UserRepository.java" afterPath="$PROJECT_DIR$/../api/src/main/java/com/mengo/api/repository/UserRepository.java" />
-      <change beforePath="$PROJECT_DIR$/../api/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/../api/src/main/resources/jdbc.properties" />
-      <change beforePath="$PROJECT_DIR$/../api/src/main/resources/springDispatcherServlet-servlet.xml" afterPath="$PROJECT_DIR$/../api/src/main/resources/springDispatcherServlet-servlet.xml" />
-      <change beforePath="$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/admin.jsp" afterPath="$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/admin.jsp" />
+      <change beforePath="$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/bangumi/list.jsp" afterPath="$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/bangumi/list.jsp" />
       <change beforePath="$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/detail.jsp" afterPath="$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/detail.jsp" />
-      <change beforePath="$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/list.jsp" afterPath="$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/list.jsp" />
       <change beforePath="$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/../api/src/main/webapp/css/materialize.min.css" afterPath="$PROJECT_DIR$/../api/src/main/webapp/css/materialize.min.css" />
       <change beforePath="$PROJECT_DIR$/../api/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/../api/src/main/webapp/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/../api/src/main/webapp/js/materialize.min.js" afterPath="$PROJECT_DIR$/../api/src/main/webapp/js/materialize.min.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,8 +29,8 @@
       <file leaf-file-name="BangumiHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../api/src/main/java/com/mengo/api/controller/BangumiHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+            <state relative-caret-position="1036">
+              <caret line="67" column="63" lean-forward="false" selection-start-line="67" selection-start-column="63" selection-end-line="67" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,33 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../api/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/admin.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="56" column="9" lean-forward="false" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../api/src/main/java/com/mengo/api/controller/UserHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="264">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,8 +53,18 @@
       <file leaf-file-name="list.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/bangumi/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-328">
-              <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+            <state relative-caret-position="126">
+              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/detail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="71" column="45" lean-forward="false" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -101,8 +73,8 @@
       <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="61" column="27" lean-forward="false" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+            <state relative-caret-position="456">
+              <caret line="75" column="21" lean-forward="true" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -111,7 +83,7 @@
       <file leaf-file-name="BangumiService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../api/src/main/java/com/mengo/api/service/BangumiService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
+            <state relative-caret-position="726">
               <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -123,7 +95,7 @@
       <file leaf-file-name="BangumiRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../api/src/main/java/com/mengo/api/repository/BangumiRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="220">
               <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -155,12 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/springDispatcherServlet-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/com.test/test/Tests.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/ehcache.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
@@ -198,13 +164,19 @@
         <option value="$PROJECT_DIR$/src/main/resources/springDispatcherServlet-servlet.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mengo/api/controller/BangumiHandler.java" />
-        <option value="$PROJECT_DIR$/../api/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/../api/src/main/java/com/mengo/api/controller/UserHandler.java" />
-        <option value="$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mengo/api/controller/UserHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mengo/api/controller/BangumiHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mengo/api/service/BangumiService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bangumi/list.jsp" />
         <option value="$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/admin.jsp" />
         <option value="$PROJECT_DIR$/../api/src/main/java/com/mengo/api/controller/BangumiHandler.java" />
-        <option value="$PROJECT_DIR$/../api/src/main/java/com/mengo/api/service/BangumiService.java" />
+        <option value="$PROJECT_DIR$/../api/src/main/java/com/mengo/api/controller/UserHandler.java" />
+        <option value="$PROJECT_DIR$/../api/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/detail.jsp" />
         <option value="$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/bangumi/list.jsp" />
       </list>
     </option>
@@ -259,7 +231,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -433,6 +404,7 @@
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -443,7 +415,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../////////video" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/..//////////video" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -703,7 +675,8 @@
       <workItem from="1520306730028" duration="10325000" />
       <workItem from="1520402149439" duration="4083000" />
       <workItem from="1520473804061" duration="19910000" />
-      <workItem from="1520556201198" duration="15694000" />
+      <workItem from="1520556201198" duration="15750000" />
+      <workItem from="1520643167959" duration="11289000" />
     </task>
     <task id="LOCAL-00001" summary="修复了昨晚一些小错误">
       <created>1520068196979</created>
@@ -726,7 +699,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520327378133</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="后台管理进行中……">
+      <created>1520588054568</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1520588054568</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -762,11 +742,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71513000" />
+    <option name="totallyTimeSpent" value="82858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
@@ -785,11 +764,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297062" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297062" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2739872" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2771855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -811,7 +790,8 @@
     <MESSAGE value="修复了昨晚一些小错误" />
     <MESSAGE value="zhanshishuju" />
     <MESSAGE value="获取数据成功并全部展示" />
-    <option name="LAST_COMMIT_MESSAGE" value="获取数据成功并全部展示" />
+    <MESSAGE value="后台管理进行中……" />
+    <option name="LAST_COMMIT_MESSAGE" value="后台管理进行中……" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -822,19 +802,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1298">
-          <caret line="59" column="37" lean-forward="false" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../api/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -873,7 +847,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -950,7 +926,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1031,7 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="88" lean-forward="false" selection-start-line="3" selection-start-column="88" selection-end-line="3" selection-end-column="88" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1042,18 +1019,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="18" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../api/src/main/java/com/mengo/api/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,7 +1089,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1128,24 +1097,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="61" column="27" lean-forward="false" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../api/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1161,7 +1112,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="92" column="9" lean-forward="false" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1175,7 +1125,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../api/src/main/java/com/mengo/api/repository/BangumiRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="220">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1185,36 +1135,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../api/src/main/java/com/mengo/api/service/BangumiService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
+        <state relative-caret-position="726">
           <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../api/src/main/java/com/mengo/api/controller/BangumiHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/admin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="56" column="9" lean-forward="false" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../api/src/main/java/com/mengo/api/controller/UserHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1226,15 +1148,77 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="75" column="21" lean-forward="true" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE.jar!/org/springframework/http/HttpStatus.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="81" column="4" lean-forward="false" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../api/src/main/java/com/mengo/api/controller/UserHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="71" column="45" lean-forward="false" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../api/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="57" column="28" lean-forward="false" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="56" column="9" lean-forward="false" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../api/src/main/java/com/mengo/api/controller/BangumiHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1036">
+          <caret line="67" column="63" lean-forward="false" selection-start-line="67" selection-start-column="63" selection-end-line="67" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../api/src/main/webapp/WEB-INF/views/bangumi/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-328">
-          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        <state relative-caret-position="126">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding />
         </state>
       </provider>

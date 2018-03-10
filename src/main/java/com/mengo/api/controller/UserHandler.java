@@ -20,24 +20,23 @@ public class UserHandler {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/login",method = RequestMethod.POST)
-    public ModelAndView login(@RequestParam(value = "user_name")String user_name, @RequestParam(value = "user_password")String user_password, HttpSession session, ModelAndView mv){
-        User user = userService.login(user_name,user_password);
-        if (user!=null){
-            session.setAttribute("user",user);
-            mv.setViewName("admin");
-        }else {
-            mv.addObject("message","登录名或密码错误，请重新输入!");
-            mv.setViewName("/error");
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public String login(@RequestParam(value = "user_name") String user_name, @RequestParam(value = "user_password") String user_password, HttpSession session, ModelMap modelMap) {
+        User user = userService.login(user_name, user_password);
+        if (user != null) {
+            session.setAttribute("user", user);
+            return "admin";
+        } else {
+            modelMap.addAttribute("message", "登录名或密码错误，请重新输入!");
+            return "error";
         }
-        return mv;
     }
 
-    @RequestMapping(value = "/list",method = RequestMethod.GET)
-    public String  listAll(ModelMap modelMap,@RequestParam(value = "pageNo",defaultValue = "1")int pageNo){
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    public String listAll(ModelMap modelMap, @RequestParam(value = "pageNo", defaultValue = "1") int pageNo) {
         GetDataFromNet getDataFromNet = new GetDataFromNet();
         DataBean dataBean = getDataFromNet.getData(pageNo);
-        modelMap.addAttribute("list_my",dataBean);
+        modelMap.addAttribute("list_my", dataBean);
         return "list";
     }
 

@@ -63,8 +63,14 @@
         </div>
     </div>
     <div class="container">
-        <p>${json_url}</p>
+        <p id="json_url">${json_url}</p>
     </div>
 
 </body>
+<script>
+    $(document).ready(function () {
+            var json = $("#json_url").html();
+            $("#video_url").html(json);
+    });
+</script>
 </html>

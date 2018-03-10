@@ -68,4 +68,5 @@ public class BangumiHandler {
         response.setHeader("Access-Control-Allow-Origin", "*");
         return new ResponseEntity<Bangumi>(bangumi, HttpStatus.OK);
     }
+
 }

@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
 <%
     if (session.getAttribute("user") == null) {
         response.sendRedirect("/index.jsp");
@@ -26,14 +26,18 @@
             $(function () {
                 $(".waves-effect.waves-light.btn.delete").click(function () {
                     var name = $(this).next(":hidden").val();
-                    var flg = comfirm("确定要删除" + name + "?");
+                    console.log($(this).attr("href"));
+                    console.log($("#_form").attr("method"));
+                    var flg = confirm("确定要删除" + name + "?");
                     if (flg) {
                         var url = $(this).attr("href");
-                        $("#form").attr("action", url);
-                        $("#form").submit();
-                    } else {
-                        return false;
+                        $("#_form").attr("action", url);
+                        $("#_form").submit();
+
                     }
+                    //这个return false 是阻止a标签的默认点击跳转行为
+                    Materialize.toast("删除成功！", 1500);
+                    return false;
                 });
             });
         </script>
@@ -42,9 +46,9 @@
 <body>
 <div class="container">
     <!--放一个隐藏的form用来把delete请求发送出去-->
-    <form:form action="" method="post" id="form">
+    <form action="" method="post" id="_form">
         <input type="hidden" name="_method" value="DELETE">
-    </form:form>
+    </form>
     <c:if test="${page==null||page.numberOfElements==0}">
         没有数据！${page.numberOfElements}
     </c:if>
@@ -68,9 +72,15 @@
                         <input type="hidden" id="name" value="${item.name}"/>
                     </td>
                     <td><a class="waves-effect waves-light btn" href="">修改</a></td>
-
                 </tr>
             </c:forEach>
+            <tr>
+                <td colspan="8">
+                    当前${page.number+1}页
+                    <a href="?pageNo=${page.number+1+1}">下一页</a>
+                </td>
+            </tr>
+
             </tbody>
         </table>
     </c:if>
