@@ -11,6 +11,7 @@ public class Bangumi {
     private String name;
     private String url;
     private Integer aid;
+    private String source_url;
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -44,5 +45,13 @@ public class Bangumi {
 
     public void setAid(Integer aid) {
         this.aid = aid;
+    }
+
+    public String getSource_url() {
+        return source_url;
+    }
+
+    public void setSource_url(String source_url) {
+        this.source_url = source_url;
     }
 }

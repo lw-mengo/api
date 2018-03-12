@@ -57,6 +57,7 @@ public class GetDataFromNet {
 //        System.out.println(url);
             try {
                 Document document = Jsoup.connect(url).timeout(6000).get();
+                String title = document.selectFirst("div.vodh").select("h2").text();
                 Elements elements = document.select("#2").select("li");
                 for (Element element : elements) {
                     String temp = element.text();
@@ -70,6 +71,8 @@ public class GetDataFromNet {
                     videoEpisodes.add(videoEpisode);
 //                    System.out.println(episode + "---->" + videoUri);
                 }
+                videoBean.setUrl(s);
+                videoBean.setTitle(title);
                 videoBean.setStatus("success");
                 videoBean.setEpisodeList(videoEpisodes);
             } catch (IOException e) {

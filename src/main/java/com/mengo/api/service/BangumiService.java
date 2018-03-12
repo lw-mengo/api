@@ -41,5 +41,11 @@ public class BangumiService {
         bangumiRepository.flush();
     }
 
+    @Transactional
+    public Bangumi updateByaid(Integer aid,String url){
+        Bangumi bangumi = bangumiRepository.updateByaid(aid,url);
+        return bangumi;
+    }
+
 
 }

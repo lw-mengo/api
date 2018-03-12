@@ -53,6 +53,21 @@ public class BangumiHandler {
         return "redirect:/bangumi/list";
     }
 
+    @RequestMapping(value = "/update_bangumi/{aid}",method = RequestMethod.GET)
+    public String update(@PathVariable(value = "aid")Integer aid ,ModelMap modelMap){
+        Gson gson = new Gson();
+        GetDataFromNet getDataFromNet = new GetDataFromNet();
+        Bangumi bangumi = bangumiService.findByAid(aid);
+        VideoBean videoBean = getDataFromNet.getInfo(bangumi.getSource_url());
+        String temp = gson.toJson(videoBean,VideoBean.class);
+        int newNum = videoBean.getEpisodeList().size();
+        modelMap.addAttribute("aid",aid);
+        modelMap.addAttribute("bangumi",bangumi);
+        modelMap.addAttribute("json_url",temp);
+        modelMap.addAttribute("newNum",newNum);
+        return "bangumi/update";
+    }
+
     @RequestMapping(value = "/bangumi/list/{id}", method = RequestMethod.DELETE)
     public String delete(@PathVariable(value = "id") Integer id) {
         bangumiService.delete(id);

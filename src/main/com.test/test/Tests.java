@@ -34,8 +34,8 @@ public class Tests {
 
         GetDataFromNet getDataFromNet = new GetDataFromNet();
        VideoBean videoBean = getDataFromNet.getInfo("/?m=vod-detail-id-6454.html");
-        String temp1 = gson.toJson(videoBean,VideoBean.class);
-        System.out.println(temp1);
+//        String temp1 = gson.toJson(videoBean,VideoBean.class);
+//        System.out.println(temp1);
 //        DataBean dataBean = getDataFromNet.getData();
 //        String temp = gson.toJson(dataBean,DataBean.class);
 //        System.out.println(temp);

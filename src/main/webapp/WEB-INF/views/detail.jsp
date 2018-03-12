@@ -39,15 +39,19 @@
 
     <div class="container">
         <div class="row">
-            <form:form class="col s12" action="${pageContext.request.contextPath}/save_bangumi" method="post" modelAttribute="bangumi">
+            <form:form cssClass="col s12" action="${pageContext.request.contextPath}/save_bangumi" method="post" modelAttribute="bangumi">
                 <div class="row">
-                    <div class="input-field col s6">
-                        <form:input placeholder="番剧名字" id="first_name" path="name" type="text" class="validate"/>
+                    <div class="input-field col s4">
+                        <form:input  id="first_name" path="name" type="text" cssClass="validate"/>
                         <label for="first_name">番名：</label>
                     </div>
-                    <div class="input-field col s6">
-                        <form:input placeholder="番剧aid" id="aid" path="aid" type="text" class="validate" />
+                    <div class="input-field col s4">
+                        <form:input  id="aid" path="aid" type="text" cssClass="validate" />
                         <label for="aid">aid:</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <form:input path="source_url" id="source_url" type="text" cssClass="validate"/>
+                        <label for="source_url">source_url:</label>
                     </div>
                 </div>
                 <div class="row">
@@ -64,6 +68,8 @@
     </div>
     <div class="container">
         <p id="json_url">${json_url}</p>
+        <p>${detail_info.title}</p>
+        <p>${detail_info.url}</p>
     </div>
 
 </body>
@@ -71,6 +77,11 @@
     $(document).ready(function () {
             var json = $("#json_url").html();
             $("#video_url").html(json);
+            var title = "${detail_info.title}";
+            $("#first_name").val(title);
+            var url ="${detail_info.url}";
+            $("#source_url").val(url);
+
     });
 </script>
 </html>

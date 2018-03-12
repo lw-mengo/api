@@ -72,7 +72,7 @@
                            href="${pageContext.request.contextPath}/bangumi/list/${item.id}">删除</a>
                         <input type="hidden" id="name" value="${item.name}"/>
                     </td>
-                    <td><a class="waves-effect waves-light btn" href="">修改</a></td>
+                    <td><a class="waves-effect waves-light btn" href="${pageContext.request.contextPath}/update_bangumi/${item.aid}">更新</a></td>
                 </tr>
             </c:forEach>
             <tr>
