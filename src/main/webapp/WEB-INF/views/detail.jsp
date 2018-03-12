@@ -11,10 +11,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="/js/jquery-3.3.1.min.js"></script>
-    <script src="/js/materialize.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery-3.3.1.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/materialize.min.js"></script>
     <title>详情页</title>
 </head>
 <body>
@@ -39,7 +39,7 @@
 
     <div class="container">
         <div class="row">
-            <form:form class="col s12" action="/save_bangumi" method="post" modelAttribute="bangumi">
+            <form:form class="col s12" action="${pageContext.request.contextPath}/save_bangumi" method="post" modelAttribute="bangumi">
                 <div class="row">
                     <div class="input-field col s6">
                         <form:input placeholder="番剧名字" id="first_name" path="name" type="text" class="validate"/>

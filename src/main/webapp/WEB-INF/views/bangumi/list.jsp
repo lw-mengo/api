@@ -17,10 +17,10 @@
 <head>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="/css/materialize.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <script src="/js/jquery-3.3.1.min.js"></script>
-        <script src="/js/materialize.min.js"></script>
+        <script src="${pageContext.request.contextPath}/js/jquery-3.3.1.min.js"></script>
+        <script src="${pageContext.request.contextPath}/js/materialize.min.js"></script>
         <title>番剧列表-当季新番</title>
         <script>
             $(function () {
@@ -33,10 +33,11 @@
                         var url = $(this).attr("href");
                         $("#_form").attr("action", url);
                         $("#_form").submit();
+                        Materialize.toast("删除成功！", 1500);
 
                     }
                     //这个return false 是阻止a标签的默认点击跳转行为
-                    Materialize.toast("删除成功！", 1500);
+                    Materialize.toast("取消删除！", 1500);
                     return false;
                 });
             });
@@ -76,8 +77,9 @@
             </c:forEach>
             <tr>
                 <td colspan="8">
-                    当前${page.number+1}页
-                    <a href="?pageNo=${page.number+1+1}">下一页</a>
+                    当前${page.number+1}页,共${page.totalPages}页记录
+                    共 ${page.totalElements}条记录
+                    <a href="${pageContext.request.contextPath}?pageNo=${page.number+1+1}">下一页</a>
                 </td>
             </tr>
 
