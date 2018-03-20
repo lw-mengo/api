@@ -20,7 +20,7 @@
 <body>
 <div class="container">
     <div class="row">
-        <form:form cssClass="col s12" action="${pageContext.request.contextPath}/save_bangumi" method="post" modelAttribute="bangumi">
+        <form:form cssClass="col s12" action="${pageContext.request.contextPath}/update_bangumi" method="post" modelAttribute="bangumi">
             <div class="row">
                 <div class="input-field col s4">
                     <form:input disabled="true" id="first_name" path="name" type="text" cssClass="validate"/>
@@ -41,6 +41,10 @@
                     <label for="video_url">视频链接的json：</label>
                 </div>
             </div>
+            <c:if test="${bangumi.aid!=null}">
+                <form:hidden path="aid"/>
+                <input type="hidden" name="_method" value="PUT" />
+            </c:if>
             <button class="btn waves-effect waves-light right" type="submit">提交
                 <i class="material-icons right">send</i>
             </button>

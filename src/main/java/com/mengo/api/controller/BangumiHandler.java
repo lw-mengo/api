@@ -53,6 +53,14 @@ public class BangumiHandler {
         return "redirect:/bangumi/list";
     }
 
+    @RequestMapping(value = "/update_bangumi",method = RequestMethod.PUT)
+    public String update(@ModelAttribute("bangumi") Bangumi bangumi){
+        String url = bangumi.getUrl();
+        Integer aid = bangumi.getAid();
+        bangumiService.updateByaid(aid,url);
+        return "redirect:/bangumi/list";
+    }
+
     @RequestMapping(value = "/update_bangumi/{aid}",method = RequestMethod.GET)
     public String update(@PathVariable(value = "aid")Integer aid ,ModelMap modelMap){
         Gson gson = new Gson();
