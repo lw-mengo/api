@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
-  Date: 2018/3/8 0008
-  Time: 13:05:44
+  Date: 2018/3/30 0030
+  Time: 15:51:25
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -21,7 +21,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="${pageContext.request.contextPath}/js/jquery-3.3.1.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/materialize.min.js"></script>
-        <title>番剧列表-完结番剧</title>
+        <title>番剧列表-当季新番</title>
         <script>
             $(function () {
                 $(".waves-effect.waves-light.btn.delete").click(function () {
@@ -84,10 +84,10 @@
                     <td>${item.aid}</td>
                     <td>
                         <a class="waves-effect waves-light btn delete"
-                           href="${pageContext.request.contextPath}/bangumi/list/${item.id}">删除</a>
+                           href="#">删除</a>
                         <input type="hidden" id="name" value="${item.name}"/>
                     </td>
-                    <td><a class="waves-effect waves-light btn" href="${pageContext.request.contextPath}/update_bangumi/${item.aid}">更新</a></td>
+                    <td><a class="waves-effect waves-light btn" href="#">更新</a></td>
                 </tr>
             </c:forEach>
             <tr>

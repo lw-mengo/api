@@ -21,7 +21,13 @@
     <script src="/js/materialize.min.js"></script>
     <title>展示数据</title>
 </head>
-
+<nav class="top-nav">
+    <div class="container">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">数据采集</a>
+        </div>
+    </div>
+</nav>
 <body>
 <div class="container">
     <table class="highlight">
@@ -29,13 +35,16 @@
         <tr>
             <th>标题</th>
             <th>地址</th>
+            <th colspan="2" class="center">操作</th>
         </tr>
         </thead>
         <tbody>
         <c:forEach var="item" items="${list_my.infoList}">
             <tr>
-                <td><a href="/detail?s=${item.url}">${item.title}</a></td>
+                <td>${item.title}</td>
                 <td>${item.url}</td>
+                <td><a class="waves-effect waves-light btn" href="/detail?s=${item.url}">添加旧番</a></td>
+                <td><a class="waves-effect waves-light btn" href="/add_new?s=${item.url}">添加新番</a></td>
             </tr>
         </c:forEach>
         </tbody>

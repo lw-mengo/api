@@ -25,7 +25,7 @@
                     <li>欢迎，${sessionScope.user.username}</li>
                     <li><a href="#">修改密码</a></li>
                     <li><a href="${pageContext.request.contextPath}/index.jsp">退出登录</a></li>
-                    <li><a href="http://47.75.55.158/" target="_blank">网站首页</a></li>
+                    <li><a href="https://www.iikanfan.com" target="_blank">网站首页</a></li>
                     <li></li>
                 </ul>
             </div>
@@ -42,9 +42,9 @@
                 <li class="bold"><a class="collapsible-header waves-effect waves-teal"><i class="material-icons">arrow_drop_down</i>番剧管理</a>
                     <div class="collapsible-body">
                         <ul>
-                            <li><a href="${pageContext.request.contextPath}/bangumi/list" target="_blank">当季新番</a></li>
+                            <li><a href="${pageContext.request.contextPath}/new_bangumi_list">当季新番</a></li>
                             <li><a href="">国产番剧</a></li>
-                            <li><a href="">陈旧番剧</a></li>
+                            <li><a href="${pageContext.request.contextPath}/bangumi/list" target="_self">陈旧番剧</a></li>
                             <li><a href="">动画电影</a></li>
                             <li><a href="">添加番剧</a></li>
                         </ul>
