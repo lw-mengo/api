@@ -7,11 +7,13 @@ import com.mengo.api.utils.GetDataFromNet;
 import com.mengo.bean.VideoBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletResponse;
 
 @Controller
 public class NewBangumiController {
@@ -56,6 +58,42 @@ public class NewBangumiController {
         modelMap.addAttribute("page",page);
         return "new_bangumi/list";
     }
+
+
+    /*
+    api接口，返回新番的json数据
+     */
+    @ResponseBody
+    @RequestMapping(value = "/subject/new/{aid}",method = RequestMethod.GET,produces = {"application/json;charset=utf-8"})
+    public ResponseEntity<NewBangumi> api(@PathVariable(value = "aid")Integer aid, HttpServletResponse response){
+        NewBangumi newBangumi = newBangumiService.findByid(aid);
+        response.setHeader("Access-Control-Allow-Origin","*");
+        if (newBangumi!=null) {
+            return new ResponseEntity<>(newBangumi, HttpStatus.OK);
+        }else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    /*
+    更新新番数据页面
+     */
+    @RequestMapping(value = "/update_new/{aid}",method = RequestMethod.GET)
+    public String update(@PathVariable(value = "aid")Integer aid,ModelMap modelMap){
+        Gson gson = new Gson();
+        GetDataFromNet getDataFromNet = new GetDataFromNet();
+        NewBangumi newBangumi = newBangumiService.findByid(aid);
+        VideoBean videoBean = getDataFromNet.getInfo(newBangumi.getSource_url());
+        String temp = gson.toJson(videoBean,VideoBean.class);
+        int newNum = videoBean.getEpisodeList().size();
+        modelMap.addAttribute("aid",aid);
+        modelMap.addAttribute("bangumi",newBangumi);
+        modelMap.addAttribute("json_url",temp);
+        modelMap.addAttribute("newNum",newNum);
+        return "new_bangumi/update";
+    }
+
+
 
 
 }

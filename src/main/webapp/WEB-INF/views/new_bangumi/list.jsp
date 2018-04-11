@@ -87,7 +87,7 @@
                            href="#">删除</a>
                         <input type="hidden" id="name" value="${item.name}"/>
                     </td>
-                    <td><a class="waves-effect waves-light btn" href="#">更新</a></td>
+                    <td><a class="waves-effect waves-light btn" href="${pageContext.request.contextPath}/update_new/${item.aid}">更新</a></td>
                 </tr>
             </c:forEach>
             <tr>

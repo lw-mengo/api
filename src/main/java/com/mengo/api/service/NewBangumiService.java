@@ -30,4 +30,13 @@ public class NewBangumiService {
         Page<NewBangumi> page = newBangumiRepository.findAll(pageRequest);
         return page;
     }
+
+    /*
+    利用id查询的事务
+     */
+    @Transactional
+    public NewBangumi findByid(Integer aid){
+        NewBangumi newBangumi = newBangumiRepository.findByAid(aid);
+        return newBangumi;
+    }
 }
