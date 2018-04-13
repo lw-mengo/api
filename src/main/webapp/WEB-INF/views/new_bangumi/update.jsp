@@ -20,7 +20,7 @@
 <body>
 <div class="container">
     <div class="row">
-        <form:form cssClass="col s12" action="${pageContext.request.contextPath}/update_new" method="post" modelAttribute="bangumi">
+        <form:form cssClass="col s12" action="${pageContext.request.contextPath}/update_new_bangumi" method="post" modelAttribute="bangumi">
             <div class="row">
                 <div class="input-field col s4">
                     <form:input disabled="true" id="first_name" path="name" type="text" cssClass="validate"/>

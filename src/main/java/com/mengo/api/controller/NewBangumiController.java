@@ -92,6 +92,16 @@ public class NewBangumiController {
         modelMap.addAttribute("newNum",newNum);
         return "new_bangumi/update";
     }
+    /*
+    更新数据的表单操作
+     */
+    @RequestMapping(value = "/update_new_bangumi",method = RequestMethod.PUT)
+    public String update(@ModelAttribute("bangumi")NewBangumi bangumi){
+        String url = bangumi.getVideo_url();
+        Integer aid = bangumi.getAid();
+        newBangumiService.updateByaid(aid,url);
+        return "redirect:/new_bangumi_list";
+    }
 
 
 

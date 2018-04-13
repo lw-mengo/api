@@ -39,4 +39,12 @@ public class NewBangumiService {
         NewBangumi newBangumi = newBangumiRepository.findByAid(aid);
         return newBangumi;
     }
+
+    /*
+    更新数据
+     */
+    public void updateByaid(Integer aid,String url){
+        newBangumiRepository.updateByaid(aid,url);
+        newBangumiRepository.flush();
+    }
 }
